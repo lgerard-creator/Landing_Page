@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurent Gerard | Systems Administrator & DevOps</title>
+    <meta name="description" content="Online portfolio of Laurent Gerard, specializing in systems administration, DevOps, and cloud computing.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="antialiased page-fade-in">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Left: Name -->
+            <div class="flex-1">
+                <a href="#" class="text-xl font-bold text-white">Laurent Gerard</a>
+            </div>
+
+            <!-- Center: Navigation (Desktop) -->
+            <nav class="hidden md:flex justify-center items-center space-x-8">
+                <a href="#about" class="hover:text-teal-400 transition-colors duration-300">About</a>
+                <a href="#skills" class="hover:text-teal-400 transition-colors duration-300">Skills</a>
+                <a href="#experience" class="hover:text-teal-400 transition-colors duration-300">Experience</a>
+                <a href="#certifications" class="hover:text-teal-400 transition-colors duration-300">Certifications</a>
+                <a href="#contact" class="hover:text-teal-400 transition-colors duration-300">Contact</a>
+            </nav>
+
+            <!-- Right: Language Switcher (Desktop) -->
+            <div class="flex-1 hidden md:flex justify-end">
+                <div class="lang-switcher pulsing-glow">
+                    <a href="../index.html" class="lang-inactive lang-link">FR</a>
+                    <span>/</span>
+                    <a href="#" class="lang-active">EN</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-700">About</a>
+            <a href="#skills" class="block py-2 px-6 text-sm hover:bg-gray-700">Skills</a>
+            <a href="#experience" class="block py-2 px-6 text-sm hover:bg-gray-700">Experience</a>
+            <a href="#certifications" class="block py-2 px-6 text-sm hover:bg-gray-700">Certifications</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-700">Contact</a>
+            <div class="lang-switcher-mobile">
+                <a href="../index.html" class="lang-inactive lang-link">FR</a>
+                <span>/</span>
+                <a href="#" class="lang-active">EN</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Laurent Gerard
+                </h1>
+                <div class="mb-6 flex justify-center items-center flex-wrap gap-3">
+                    <div class="bg-gray-800/80 text-gray-300 font-semibold px-4 py-1 rounded-full text-base">Graduate in Foreign Trade</div>
+                    <div class="bg-gray-800/80 text-gray-300 font-semibold px-4 py-1 rounded-full text-base">Graduate in Transport & Logistics</div>
+                </div>
+                <h2 class="text-2xl md:text-4xl font-bold gradient-text mb-8">
+                    Systems Administrator & DevOps
+                </h2>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-400 mb-12">
+                    Passionate about automation, the cloud, and solving complex problems. I turn technical challenges into robust and efficient solutions.
+                </p>
+                <div class="flex flex-col justify-center items-center space-y-8">
+                    <a href="#about" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">
+                        Discover my journey
+                    </a>
+                    <a href="#about" class="scroll-down-indicator">
+                        <div class="mouse">
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-4xl font-bold text-white">About Me</h2>
+                    <p class="text-teal-400">My journey and my passion for technology</p>
+                </div>
+                <div class="max-w-4xl mx-auto text-lg text-center text-gray-300 reveal">
+                    <img src="../assets/images/avatar.png" alt="Photo of Laurent Gerard" class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-teal-400 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/192x192/1f2937/4fd1c5?text=LG';">
+                    <div class="space-y-4">
+                        <p>
+                            After several years in various roles that brought me rigor and adaptability, I developed solid field experience and have maintained a particular affinity for the <strong>commerce, logistics, and transport</strong> sectors.
+                        </p>
+                        <p>
+                            I then directed my career towards another passion, IT, to become a specialist in systems administration and DevOps technologies, while including the latest generative AI tools.
+                        </p>
+                        <p>
+                            My goal is precisely to merge these two worlds: using my cutting-edge technical skills to solve the operational challenges of the supply chain. I am convinced that automation (DevOps) and predictive analysis (AI) can bring considerable added value to modernize infrastructures, optimize flows, and improve efficiency in sectors that are dear to me.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-4xl font-bold text-white">Technical Skills</h2>
+                    <p class="text-teal-400">My favorite tools</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-teal-500/20 transition-shadow duration-300">
+                        <i data-lucide="cloud" class="mx-auto h-12 w-12 text-teal-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Cloud & DevOps</h3>
+                        <p class="text-gray-400">Docker, Kubernetes, OpenShift, Git, Ansible, Proxmox, OpenStack</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-blue-500/20 transition-shadow duration-300 border-2 border-blue-500/50">
+                        <i data-lucide="brain-circuit" class="mx-auto h-12 w-12 text-blue-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Gen AI</h3>
+                        <p class="text-gray-400">Prompt Engineering, Data Analysis, AI Agents, Critical Thinking</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-teal-500/20 transition-shadow duration-300">
+                        <i data-lucide="server" class="mx-auto h-12 w-12 text-teal-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Operating Systems</h3>
+                        <p class="text-gray-400">Linux (Debian, CentOS), MS Windows Server</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-teal-500/20 transition-shadow duration-300">
+                        <i data-lucide="database" class="mx-auto h-12 w-12 text-teal-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Databases</h3>
+                        <p class="text-gray-400">Oracle, MS SQL, MySQL</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-teal-500/20 transition-shadow duration-300">
+                        <i data-lucide="shield" class="mx-auto h-12 w-12 text-teal-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Network & Security</h3>
+                        <p class="text-gray-400">Cisco (CCNA), Firewall, Network Security</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-teal-500/20 transition-shadow duration-300">
+                        <i data-lucide="toolbox" class="mx-auto h-12 w-12 text-teal-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Tools & Environment</h3>
+                        <p class="text-gray-400">VSCode, Cursor, Warp, tmux, LM Studio, OpenWeb UI, RustDesk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl font-bold text-white">Professional Experience</h2>
+                    <p class="text-teal-400">Where I've put my skills into practice</p>
+                </div>
+                <div class="relative max-w-3xl mx-auto pl-8">
+                    <!-- Vertical line -->
+                    <div class="absolute left-4 top-2 h-full w-0.5 bg-gray-700 hidden md:block"></div>
+                    
+                    <!-- Experience Item -->
+                    <div class="relative timeline-item mb-12 reveal">
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="briefcase" class="h-8 w-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Support Desk (Internship)</h3>
+                                <p class="text-lg text-gray-400 mb-2">Eastnets</p>
+                                <p class="text-gray-300">Troubleshooting AML (Anti-Money Laundering) solutions on Windows Server, Linux, and various databases (Oracle, SQL). Creating tickets for the development department.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Item -->
+                    <div class="relative timeline-item mb-12 reveal">
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="package-check" class="h-8 w-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Picker (Voice & Order)</h3>
+                                <p class="text-lg text-gray-400 mb-2">Start People (for Logisma & Medi-Supply)</p>
+                                <p class="text-gray-300">Preparing orders using voice systems and for web orders, demonstrating rigor and efficiency in a logistics environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Item -->
+                    <div class="relative timeline-item mb-12 reveal">
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="warehouse" class="h-8 w-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Logistics & Warehouse Employee</h3>
+                                <p class="text-lg text-gray-400 mb-2">TRACE Interim (for SHAPE - NATO)</p>
+                                <p class="text-gray-300">Managing goods receipt, using the EIMS ERP, customer/supplier contact, inventory management, and order preparation in a demanding international environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Item -->
+                    <div class="relative timeline-item reveal">
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="wrench" class="h-8 w-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Various Technical Roles</h3>
+                                <p class="text-lg text-gray-400 mb-2">SHAPE, Charleroi Administration</p>
+                                <p class="text-gray-300">Positions including ventilation mechanic, laborer, and system administration intern (server maintenance, backups, security), marking the beginning of my technical career.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-4xl font-bold text-white">Training & Certifications</h2>
+                    <p class="text-teal-400">My commitment to continuous learning</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-gray-800 p-6 rounded-lg reveal border border-transparent hover:border-teal-500 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Technocite - DevOps (840h)</h3>
+                        <p class="text-gray-400 mb-4">2021-2022</p>
+                        <p>Intensive training: MS Server 2022, Linux, Hyper-V, SQL, OpenStack, Proxmox, Docker, Kubernetes, Agile, Scrum.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-amber-500/20 transition-shadow duration-300 border-2 border-amber-500/50">
+                        <i data-lucide="graduation-cap" class="mx-auto h-12 w-12 text-amber-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Graduate Degrees</h3>
+                        <p class="text-gray-400">Foreign Trade</p>
+                        <p class="text-gray-400 -mt-2">Transport & Logistics Management</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg reveal border border-transparent hover:border-teal-500 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Google - Prompt Engineering Essentials</h3>
+                        <p class="text-gray-400 mb-4">Coursera - 2025</p>
+                        <p>Skills in prompt engineering, data analysis, Generative AI, and document management.</p>
+                        <a href="https://coursera.org/verify/specialization/1.2X,T39VXKTNA" target="_blank" class="text-teal-400 hover:text-teal-300 font-semibold">Verify →</a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg reveal border border-transparent hover:border-teal-500 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">KodeKloud - DevOps & Kubernetes</h3>
+                        <p class="text-gray-400 mb-4">2022-2025</p>
+                        <p>Series of certifications: Git, Linux, Docker, Kubernetes, OpenShift, Ansible, and Prompt Engineering.</p>
+                        <a href="https://learn.kodekloud.com/user/certificate/85b0f16d-2194-4e9f-b6b0-88c0ac4642ed" target="_blank" class="text-teal-400 hover:text-teal-300 font-semibold">See an example →</a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg reveal border border-transparent hover:border-teal-500 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Technofutur TIC & CITEGECO</h3>
+                        <p class="text-gray-400 mb-4">2009-2012</p>
+                        <p>Training in security (Firewall), server administration (MS/Linux, VMWare) and networking (Cisco CCNA).</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg reveal border border-transparent hover:border-teal-500 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Generalist A.I - OutSkills</h3>
+                        <p class="text-gray-400 mb-4">July 2025</p>
+                        <p>Storytelling, image, video, music creation, No-Code automation, data analysis, Agentic AI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-4xl font-bold text-white">Contact Me</h2>
+                    <p class="text-teal-400">Let's discuss your next project</p>
+                </div>
+                <div class="max-w-xl mx-auto text-center">
+                    <p class="text-lg mb-8 text-gray-300 reveal">
+                        I am currently looking for new opportunities and would be delighted to chat with you. Feel free to contact me via the form or on LinkedIn.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 reveal">
+                        <button id="open-modal-btn" class="flex items-center justify-center w-full sm:w-auto bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">
+                            <i data-lucide="mail" class="h-5 w-5 mr-2"></i>
+                            Contact Me
+                        </button>
+                        <a href="http://www.linkedin.com/in/getard-laumem" target="_blank" class="flex items-center justify-center w-full sm:w-auto bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">
+                             <i data-lucide="linkedin" class="h-5 w-5 mr-2"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Laurent Gerard. All rights reserved.</p>
+            <p>Designed with passion and code.</p>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="text-2xl font-bold text-white">Contact Form</h3>
+                <button id="close-modal-btn" class="text-gray-400 hover:text-white">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <!-- 
+                        IMPORTANT INSTRUCTION: 
+                        1. Go to https://staticforms.xyz/ and create a free account.
+                        2. Copy your unique "Access Key" from your dashboard.
+                        3. Replace "YOUR_ACCESS_KEY_HERE" below with your key.
+                    -->
+                    <input type="hidden" name="accessKey" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="New message from your portfolio">
+                    <input type="hidden" name="redirectTo" value=""> <!-- Optional: link to a thank you page -->
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Name</label>
+                            <input type="text" name="name" id="name" class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="title" class="block text-gray-300 text-sm font-bold mb-2">Title</label>
+                            <input type="text" name="title" id="title" class="form-input">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="company" class="block text-gray-300 text-sm font-bold mb-2">Company</label>
+                        <input type="text" name="company" id="company" class="form-input">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Email</label>
+                        <input type="email" name="email" id="email" class="form-input" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="subject-field" class="block text-gray-300 text-sm font-bold mb-2">Subject</label>
+                        <input type="text" name="$subject" id="subject-field" class="form-input" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="jobLink" class="block text-gray-300 text-sm font-bold mb-2">Job Offer Link (Optional)</label>
+                        <input type="text" name="jobLink" id="jobLink" class="form-input">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Message</label>
+                        <textarea name="message" id="message" rows="4" class="form-textarea" required></textarea>
+                    </div>
+                    <div class="flex items-center justify-end">
+                        <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition-transform duration-300 hover:scale-105">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
