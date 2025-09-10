@@ -366,10 +366,14 @@
                         <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Message</label>
                         <textarea name="message" id="message" rows="4" class="form-textarea" required></textarea>
                     </div>
+                    <!-- reCAPTCHA widget -->
+                    <div class="g-recaptcha" data-sitekey="6Lef08QrAAAAAK0EwG6iqTl6pxDkSYbNYzhob9SQ"></div>
                     <div class="flex items-center justify-end">
                         <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition-transform duration-300 hover:scale-105">
                             Envoyer
                         </button>
+                        <!-- Include reCAPTCHA JavaScript -->
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     </div>
                 </form>
             </div>
