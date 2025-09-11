@@ -121,7 +121,7 @@
                     <p class="text-teal-400">My journey and my passion for technology</p>
                 </div>
                 <div class="max-w-4xl mx-auto text-lg text-center text-gray-300 reveal">
-                    <img src="https://raw.githubusercontent.com/lgerard-creator/Landing_Page/main/assets/images/Social-2-png.png" alt="Photo of Laurent Gerard" class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-teal-400 shadow-lg">
+                    <img id="profile-pic-en" src="https://raw.githubusercontent.com/lgerard-creator/Landing_Page/main/assets/images/Social-2-png.png" alt="Photo of Laurent Gerard" class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-teal-400 shadow-lg cursor-pointer hover:opacity-90 transition-opacity duration-300">
                     <div class="space-y-4">
                         <p>
                             After several years in various roles that brought me rigor and adaptability, I developed solid field experience and have maintained a particular affinity for the <strong>commerce, logistics, and transport</strong> sectors.
@@ -382,8 +382,17 @@
             </div>
         </div>
     </div>
+    
+    <!-- Image Viewer Modal -->
+    <div id="image-modal-en" class="modal-overlay">
+        <div class="modal-container !p-4 md:!p-6 bg-transparent shadow-none max-w-3xl relative">
+             <button id="close-image-modal-btn-en" class="absolute -top-2 -right-2 text-white/80 hover:text-white z-20 text-4xl">&times;</button>
+            <img src="https://raw.githubusercontent.com/lgerard-creator/Landing_Page/main/assets/images/Social-2-png.png" alt="Photo of Laurent Gerard - Enlarged" class="rounded-lg shadow-2xl max-w-full max-h-[80vh] mx-auto">
+        </div>
+    </div>
 
     <!-- Custom JavaScript -->
     <script src="../assets/js/main.js"></script>
 </body>
 </html>
+
