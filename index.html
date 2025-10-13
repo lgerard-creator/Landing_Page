@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Social Sharing Tags -->
+    <title>Laurent Gerard | Administrateur Systèmes & DevOps</title>
+    <meta name="description" content="Portfolio en ligne de Laurent Gerard, spécialisé en administration systèmes, DevOps, et cloud computing, avec une expertise en logistique et commerce.">
+    <meta name="author" content="Laurent Gerard">
+    <meta property="og:title" content="Laurent Gerard | Administrateur Systèmes & DevOps">
+    <meta property="og:description" content="Découvrez le portfolio d'un professionnel polyvalent à la croisée de la tech et de la logistique.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://VOTRE_URL_FINALE_ICI">
+    <meta property="og:image" content="https://VOTRE_URL_FINALE_ICI/assets/images/social-preview.png"> <!-- Créez une image de 1200x630px -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="antialiased page-fade-in">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 relative flex items-center justify-between">
+            <!-- Left: Name -->
+            <div>
+                <a href="#" class="text-xl font-bold text-white">Laurent Gerard</a>
+            </div>
+
+            <!-- Center: Navigation (Desktop) -->
+            <nav class="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center space-x-8">
+                <a href="#about" class="hover:text-teal-400 transition-colors duration-300 whitespace-nowrap">À propos</a>
+                <a href="#skills" class="hover:text-teal-400 transition-colors duration-300">Compétences</a>
+                <a href="#experience" class="hover:text-teal-400 transition-colors duration-300">Expérience</a>
+                <a href="#certifications" class="hover:text-teal-400 transition-colors duration-300">Certifications</a>
+                <a href="mailto:laurent.audibert@protonmail.com" class="hover:text-teal-400 transition-colors duration-300">Contact</a>
+            </nav>
+
+            <!-- Right: Language Switcher & Mobile Button -->
+            <div class="flex items-center">
+                <div class="hidden md:flex">
+                     <div class="lang-switcher pulsing-glow">
+                        <a href="#" class="lang-active">FR</a>
+                        <span>/</span>
+                        <a href="en/index.html" class="lang-inactive lang-link">EN</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-700">À propos</a>
+            <a href="#skills" class="block py-2 px-6 text-sm hover:bg-gray-700">Compétences</a>
+            <a href="#experience" class="block py-2 px-6 text-sm hover:bg-gray-700">Expérience</a>
+            <a href="#certifications" class="block py-2 px-6 text-sm hover:bg-gray-700">Certifications</a>
+            <a href="mailto:laurent.audibert@protonmail.com" class="block py-2 px-6 text-sm hover:bg-gray-700">Contact</a>
+            <div class="lang-switcher-mobile">
+                <a href="#" class="lang-active">FR</a>
+                <span>/</span>
+                <a href="en/index.html" class="lang-inactive lang-link">EN</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Laurent Gerard
+                </h1>
+                <div class="mb-6 flex justify-center items-center flex-wrap gap-3">
+                    <div class="bg-gray-800/80 text-gray-300 font-semibold px-4 py-1 rounded-full text-base">Graduat en Commerce Extérieur</div>
+                    <div class="bg-gray-800/80 text-gray-300 font-semibold px-4 py-1 rounded-full text-base">Gestion des Transports et Logistique</div>
+                </div>
+                <h2 class="text-2xl md:text-4xl font-bold gradient-text mb-8">
+                    Administrateur Systèmes & DevOps
+                </h2>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-400 mb-12">
+                    Passionné par l'automatisation, le cloud et la résolution de problèmes complexes. Je transforme les défis techniques en solutions robustes et efficaces.
+                </p>
+                <div class="flex flex-col justify-center items-center space-y-8">
+                    <a href="#about" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">
+                        Découvrir mon parcours
+                    </a>
+                    <a href="#about" class="scroll-down-indicator">
+                        <div class="mouse">
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-4xl font-bold text-white">À Propos de Moi</h2>
+                    <p class="text-teal-400">Mon parcours et ma passion pour la technologie</p>
+                </div>
+                <div class="max-w-4xl mx-auto text-lg text-center text-gray-300 reveal">
+                    <img src="https://raw.githubusercontent.com/lgerard-creator/Landing_Page/main/assets/images/Social-2-png.png" alt="Photo de Laurent Gerard" class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-teal-400 shadow-lg">
+                    <div class="space-y-4">
+                        <p>
+                            Après plusieurs années dans des rôles variés qui m'ont apporté rigueur et adaptabilité, j'ai développé une solide expérience de terrain et conservé une affinité particulière pour les secteurs du <strong>commerce, de la logistique et du transport</strong>.
+                        </p>
+                        <p>
+                            J'ai ensuite orienté ma carrière vers une autre passion, l'informatique, pour devenir spécialiste en administration de systèmes et technologies DevOps tout en incluant les derniers outils d'I.A générative.
+                        </p>
+                        <p>
+                            Mon objectif est précisément de faire converger ces deux mondes : utiliser mes compétences techniques de pointe pour résoudre les défis opérationnels de la chaîne logistique. Je suis convaincu que l'automatisation (DevOps) et l'analyse prédictive (IA) peuvent apporter une valeur ajoutée considérable pour moderniser les infrastructures, optimiser les flux et améliorer l'efficacité dans des secteurs qui me sont chers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-4xl font-bold text-white">Compétences Techniques</h2>
+                    <p class="text-teal-400">Mes outils de prédilection</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-teal-500/20 transition-shadow duration-300">
+                        <i data-lucide="cloud" class="mx-auto h-12 w-12 text-teal-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Cloud & DevOps</h3>
+                        <p class="text-gray-400">Docker, Kubernetes, OpenShift, Git, Ansible, Proxmox, OpenStack</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-blue-500/20 transition-shadow duration-300 border-2 border-blue-500/50">
+                        <i data-lucide="brain-circuit" class="mx-auto h-12 w-12 text-blue-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Gen I.A</h3>
+                        <p class="text-gray-400">Prompt Engineering, Data Analysis, AI Agents, Critical Thinking</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-teal-500/20 transition-shadow duration-300">
+                        <i data-lucide="server" class="mx-auto h-12 w-12 text-teal-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Systèmes d'Exploitation</h3>
+                        <p class="text-gray-400">Linux (Debian, CentOS), MS Windows Server</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-teal-500/20 transition-shadow duration-300">
+                        <i data-lucide="database" class="mx-auto h-12 w-12 text-teal-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Bases de Données</h3>
+                        <p class="text-gray-400">Oracle, MS SQL, MySQL</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-teal-500/20 transition-shadow duration-300">
+                        <i data-lucide="shield" class="mx-auto h-12 w-12 text-teal-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Réseau & Sécurité</h3>
+                        <p class="text-gray-400">Cisco (CCNA), Firewall, Sécurité des réseaux</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-teal-500/20 transition-shadow duration-300">
+                        <i data-lucide="toolbox" class="mx-auto h-12 w-12 text-teal-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Outils & Environnement</h3>
+                        <p class="text-gray-400">VSCode, Cursor, Warp, tmux, LM Studio, OpenWeb UI, RustDesk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl font-bold text-white">Expérience Professionnelle</h2>
+                    <p class="text-teal-400">Où j'ai mis mes compétences en pratique</p>
+                </div>
+                <div class="relative max-w-3xl mx-auto pl-8">
+                    <!-- Vertical line -->
+                    <div class="absolute left-4 top-2 h-full w-0.5 bg-gray-700 hidden md:block"></div>
+                    
+                    <!-- Experience Item -->
+                    <div class="relative timeline-item mb-12 reveal">
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="briefcase" class="h-8 w-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Support Desk (Stage)</h3>
+                                <p class="text-lg text-gray-400 mb-2">Eastnets</p>
+                                <p class="text-gray-300">Dépannage de solutions AML (Anti-blanchiment) sur Windows Server, Linux et diverses bases de données (Oracle, SQL). Création de tickets pour le département de développement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Item -->
+                    <div class="relative timeline-item mb-12 reveal">
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="package-check" class="h-8 w-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Picker (Vocal & Commandes)</h3>
+                                <p class="text-lg text-gray-400 mb-2">Start People (pour Logisma & Medi-Supply)</p>
+                                <p class="text-gray-300">Préparation de commandes en utilisant des systèmes vocaux et pour des commandes web, démontrant rigueur et efficacité dans un environnement logistique.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Item -->
+                    <div class="relative timeline-item mb-12 reveal">
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="warehouse" class="h-8 w-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Employé Logistique & Magasinier</h3>
+                                <p class="text-lg text-gray-400 mb-2">TRACE Interim (pour SHAPE - OTAN)</p>
+                                <p class="text-gray-300">Gestion de la réception de marchandises, utilisation de l'ERP EIMS, contact client/fournisseur, gestion d'inventaire et préparation de commandes dans un environnement international exigeant.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Item -->
+                    <div class="relative timeline-item reveal">
+                        <div class="flex items-start space-x-4">
+                            <i data-lucide="wrench" class="h-8 w-8 text-teal-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Divers Rôles Techniques</h3>
+                                <p class="text-lg text-gray-400 mb-2">SHAPE, Administration de Charleroi</p>
+                                <p class="text-gray-300">Postes incluant mécanicien en ventilation, manœuvre et stage en administration système (maintenance serveurs, backups, sécurité), marquant les débuts de ma carrière technique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-4xl font-bold text-white">Formations & Certifications</h2>
+                    <p class="text-teal-400">Mon engagement pour un apprentissage continu</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-gray-800 p-6 rounded-lg reveal border border-transparent hover:border-teal-500 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Technocite - DevOps (840h)</h3>
+                        <p class="text-gray-400 mb-4">2021-2022</p>
+                        <p>Formation intensive : MS Server 2022, Linux, Hyper-V, SQL, OpenStack, Proxmox, Docker, Kubernetes, Agile, Scrum.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center reveal hover:shadow-lg hover:shadow-amber-500/20 transition-shadow duration-300 border-2 border-amber-500/50">
+                        <i data-lucide="graduation-cap" class="mx-auto h-12 w-12 text-amber-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Graduats</h3>
+                        <p class="text-gray-400">Commerce Extérieur</p>
+                        <p class="text-gray-400 -mt-2">Gestion des Transports et Logistique</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg reveal border border-transparent hover:border-teal-500 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Google - Prompt Engineering Essentials</h3>
+                        <p class="text-gray-400 mb-4">Coursera - 2025</p>
+                        <p>Compétences en ingénierie de prompt, analyse de données, IA Générative, et gestion de documents.</p>
+                        <a href="https://coursera.org/verify/specialization/1.2X,T39VXKTNA" target="_blank" class="text-teal-400 hover:text-teal-300 font-semibold">Vérifier →</a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg reveal border border-transparent hover:border-teal-500 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">KodeKloud - DevOps & Kubernetes</h3>
+                        <p class="text-gray-400 mb-4">2022-2025</p>
+                        <p>Série de certifications : Git, Linux, Docker, Kubernetes, OpenShift, Ansible, et Prompt Engineering.</p>
+                        <a href="https://learn.kodekloud.com/user/certificate/85b0f16d-2194-4e9f-b6b0-88c0ac4642ed" target="_blank" class="text-teal-400 hover:text-teal-300 font-semibold">Voir un exemple →</a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg reveal border border-transparent hover:border-teal-500 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Technofutur TIC & CITEGECO</h3>
+                        <p class="text-gray-400 mb-4">2009-2012</p>
+                        <p>Formations en sécurité (Firewall), administration serveurs (MS/Linux, VMWare) et réseau (Cisco CCNA).</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg reveal border border-transparent hover:border-teal-500 transition-colors duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">A.I Généraliste - OutSkills</h3>
+                        <p class="text-gray-400 mb-4">juillet 2025</p>
+                        <p>Storytelling, création d'image, video, music, automation (No-Code), analyse de données, Agentic AI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-4xl font-bold text-white">Contactez-moi</h2>
+                    <p class="text-teal-400">Discutons de votre prochain projet</p>
+                </div>
+                <div class="max-w-xl mx-auto text-center">
+                    <p class="text-lg mb-8 text-gray-300 reveal">
+                        Je suis actuellement à la recherche de nouvelles opportunités et je serais ravi d'échanger avec vous. N'hésitez pas à me contacter directement par email.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 reveal">
+                        <a href="mailto:laurent.audibert@protonmail.com" class="flex items-center justify-center w-full sm:w-auto bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">
+                            <i data-lucide="mail" class="h-5 w-5 mr-2"></i>
+                            Me contacter
+                        </a>
+                        <a href="http://www.linkedin.com/in/getard-laumem" target="_blank" class="flex items-center justify-center w-full sm:w-auto bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 hover:scale-105 text-lg">
+                             <i data-lucide="linkedin" class="h-5 w-5 mr-2"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Laurent Gerard. Tous droits réservés.</p>
+            <p>Conçu avec passion, du code et l'aide de l'I.A.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

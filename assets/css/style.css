@@ -1,0 +1,154 @@
+/*
+ * Feuille de style personnalisée pour le portfolio de Laurent Gerard
+ */
+
+/* Définition de la police par défaut et des couleurs de base */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* bg-gray-900 */
+    color: #D1D5DB; /* text-gray-300 */
+}
+
+/* Style pour le dégradé du titre h2 dans la section hero */
+.gradient-text {
+    background: linear-gradient(to right, #4FD1C5, #3B82F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Animation pour l'apparition des éléments au défilement */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style pour la timeline dans la section expérience */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1f2937; /* bg-gray-800 */
+    border: 4px solid #4FD1C5; /* accent color (teal) */
+    z-index: 1;
+}
+
+/* Ajoute un espace pour le header fixe lors du défilement vers une ancre */
+section[id] {
+    scroll-margin-top: 80px; /* La hauteur approximative du header */
+}
+
+/* Styles pour le sélecteur de langue */
+.lang-switcher {
+    background-color: #374151; /* bg-gray-700 */
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    position: relative;
+}
+
+.lang-switcher span {
+    color: #6b7280; /* text-gray-500 */
+}
+
+.lang-active {
+    color: #ffffff; /* text-white */
+    font-weight: 700;
+}
+
+.lang-inactive {
+    color: #9ca3af; /* text-gray-400 */
+    transition: color 0.3s;
+}
+
+.lang-inactive:hover {
+    color: #ffffff; /* text-white */
+}
+
+.lang-switcher-mobile {
+    padding: 12px 24px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.lang-switcher-mobile span {
+    color: #6b7280;
+    margin: 0 4px;
+}
+
+/* Animation de lueur pulsante */
+.pulsing-glow {
+    animation: pulse 2.5s infinite;
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); /* blue-500 */
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+}
+
+/* Animation de transition de page */
+.page-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.page-fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Indicateur de défilement */
+.mouse {
+    width: 25px;
+    height: 40px;
+    border: 2px solid #9ca3af; /* text-gray-400 */
+    border-radius: 60px;
+    position: relative;
+}
+.mouse span {
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    background: #9ca3af;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    animation: wheel 1.5s infinite;
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 24px;
+  }
+}
